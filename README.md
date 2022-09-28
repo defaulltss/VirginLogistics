@@ -21,3 +21,5 @@
 Tagad biznesa daļa - iespēja par savu sūri grūti pelnīto stipendiju nopirkt "pass", kas tev ļaus apiet vienu banu. Varbūt ienāks prātā vēl kāds perk.
 
 # PLS EDIT UN BALSOJAT KURŠ GRIB KURU IDEJU !!!
+
+# Ideja 2 got the most votes paldies, ka piedalijaties balsošanā !
