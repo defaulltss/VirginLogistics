@@ -1,7 +1,7 @@
 # VirginLogistics
 
 - Ralfs Daniels Ūks DP4-3 | ideja 2
-- Niks Veidemanis DP4-3 |
+- Niks Veidemanis DP4-3 | ideja 2
 - Valters Upenieks DP4-3 |
 - Niks Erra DP4-3 | ideja 3
 - Ralfs Filipjonoks DP4-3 |
