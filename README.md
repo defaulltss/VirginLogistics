@@ -2,7 +2,7 @@
 
 - Ralfs Daniels Ūks DP4-3 | ideja 2
 - Niks Veidemanis DP4-3 | ideja 2
-- Valters Upenieks DP4-3 |
+- Valters Upenieks DP4-3 | ideja 2
 - Niks Erra DP4-3 | ideja 3
 - Ralfs Filipjonoks DP4-3 |
 - Anna Alise Lauberte DP4-3 | ideja 2
