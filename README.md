@@ -5,7 +5,7 @@
 - Valters Upenieks DP4-3 |
 - Niks Erra DP4-3 |
 - Ralfs Filipjonoks DP4-3 |
-- Raimonds (hz uzvārdu) (hz grupu) |
+- Anna Alise Lauberte DP4-3 |
 
 ## ideja numero uno :
 
