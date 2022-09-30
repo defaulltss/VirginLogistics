@@ -23,3 +23,6 @@ Tagad biznesa daļa - iespēja par savu sūri grūti pelnīto stipendiju nopirkt
 # PLS EDIT UN BALSOJAT KURŠ GRIB KURU IDEJU !!!
 
 # Ideja 2 got the most votes paldies, ka piedalijaties balsošanā !
+
+
+## Also ja jums ir idejas priekš logo (krāsas/zīmoli/skices/formas) edit file un lmk
