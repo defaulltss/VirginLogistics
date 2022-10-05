@@ -20,9 +20,10 @@
 - imageboard RVT studentiem, kur būtu iespējams sazināties savā starpā, burtiski neatkarīgi no tehniskā nodrošinājuma. Iznāktu kaut kas līdzīgs twitter, kur katrs cilvēks varētu izveidot savu thread par konkrētu tēmu, piemēram, "igora kursa darbi", kur visu kursu audzēkņi varētu apspriest to cirku. Lai rakstītu postus nevajadzēs nekādu profilu - viss būs anonīmi, taču adminiem gan varētu kaut ko izdomāt. Neaktīvi threadi tiktu dzēsti pēc īsa laika, lai nepiemēslotu feed. Ja kāds spamos un darīs sūdus, to lietotāju ip var nobloķēt un aizliegt tiem postot uz noteiktu vai nenoteiktu laiku. 
 Tagad biznesa daļa - iespēja par savu sūri grūti pelnīto stipendiju nopirkt "pass", kas tev ļaus apiet vienu banu. Varbūt ienāks prātā vēl kāds perk.
 
-# PLS EDIT UN BALSOJAT KURŠ GRIB KURU IDEJU !!!
-
-# Ideja 2 got the most votes paldies, ka piedalijaties balsošanā !
-
-
-## Also ja jums ir idejas priekš logo (krāsas/zīmoli/skices/formas) edit file un lmk
+# Roles
+- Valters = Dizains
+- Niks E = Datubaze
+- Niks V = Boss
+- Ralfs U = Boss 2
+- Ralfs F = Kautko no visa
+- Anna = Kautko no visa 
