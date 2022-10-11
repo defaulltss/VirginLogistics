@@ -1,4 +1,30 @@
 .footer {
-    font-size: medium;
     text-align: center;
+    font-size: smaller;
+}
+.header {
+    font-size: large;
+}
+.company_name {
+    margin-left: 200px;
+}
+.company_number {
+    margin-left:auto;
+}
+.numurs{
+    margin-top: -65px;
+    text-align: right;
+}
+.sludinajumi {
+    font-size: larger;
+}
+.pieslegites {
+    font-size: larger;
+    margin-top: -57px;
+    text-align: center;
+}
+.reģistrēties {
+    font-size: larger;
+    margin-top: -57px;
+    text-align: right;
 }
