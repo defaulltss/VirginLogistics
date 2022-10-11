@@ -1,6 +1,7 @@
 .par_mums{
-    margin-right: 100%;
-    margin-bottom: 300px;
+    height: 300px;
+    width: 100%;
     background-color: black;
     opacity: 35%;
+    display:flex;
 }
