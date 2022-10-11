@@ -16,20 +16,26 @@
 .numurs{
     margin-top: -65px;
     text-align: right;
+    margin-right: 30px;
 }
 .sludinajumi {
-    font-size: larger;
-    margin-left: 720px;
+    font-size: x-large;
+    margin: 10px;
+    text-decoration:none;
+    background-color:none;
+
 }
 .pieslegites {
-    font-size: larger;
-    margin-top: -53px;
-    margin-left: 900px;
+    font-size: x-large;
+    margin: 10px;
+    text-decoration:none;
+    background-color:none;
 }
 .reģistrēties {
-    font-size: larger;
-    margin-top: -57px;
-    margin-left: 1050px;
+    font-size: x-large;
+    margin: 10px;
+    text-decoration:none;
+    background-color:none;
 }
 .navbar {
     height: 50px;
@@ -41,3 +47,6 @@ body, html {
     padding: 0 !important;
 
   }
+.navbarteksts {
+    text-align: center;
+}
