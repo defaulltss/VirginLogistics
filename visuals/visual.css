@@ -1,14 +1,16 @@
 .footer {
     margin-top: 24%;
-    height: 10000px;
+    height: 100px;
     text-align: center;
     font-size: smaller;
 }
 .header {
     font-size: large;
+    color: white;
+    font-family: 'Inter', sans-serif;
 }
 .kompanijas_nosaukums {
-    margin-left: 200px;
+    margin-left: 225px;
 }
 .kompanijas_numurs {
     margin-left:auto;
@@ -18,29 +20,18 @@
     text-align: right;
     margin-right: 30px;
 }
-.sludinajumi {
-    font-size: x-large;
-    margin: 10px;
+.sludinajumi, .pieslegites, .reģistrēties{
+    font-size: xx-large;
+    margin: 40px;
     text-decoration:none;
-    background-color:none;
+    color: white;
+    font-family: 'Inter', sans-serif;
 
-}
-.pieslegites {
-    font-size: x-large;
-    margin: 10px;
-    text-decoration:none;
-    background-color:none;
-}
-.reģistrēties {
-    font-size: x-large;
-    margin: 10px;
-    text-decoration:none;
-    background-color:none;
 }
 .navbar {
     height: 50px;
 }
-body, html {
+body, .html {
     height: 100%;
     width: 100%;
     margin: 0 !important;
@@ -49,4 +40,11 @@ body, html {
   }
 .navbarteksts {
     text-align: center;
+    color: white;
+    
+}
+.Logo {
+    height: 130px;
+    width: 160px;
+    margin-top: -200px;
 }
