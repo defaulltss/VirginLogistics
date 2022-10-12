@@ -1,6 +1,6 @@
 .footer {
     margin-top: 24%;
-    height: 100px;
+    height: 200px;
     text-align: center;
     font-size: smaller;
 }
@@ -12,15 +12,16 @@
 .kompanijas_nosaukums {
     margin-left: 225px;
 }
-.kompanijas_numurs {
-    margin-left:auto;
-}
-.numurs{
+.pieslēgties{
     margin-top: -65px;
     text-align: right;
     margin-right: 30px;
+    text-decoration: none;
+    font-size: xx-large;
+    color: white;
+    font-family: 'Inter', sans-serif;
 }
-.sludinajumi, .pieslegites, .reģistrēties{
+.sludinajumi {
     font-size: xx-large;
     margin: 40px;
     text-decoration:none;
@@ -43,7 +44,7 @@ body, .html {
     color: white;
     
 }
-.Logo {
+.logo {
     height: 130px;
     width: 160px;
     margin-top: -200px;
