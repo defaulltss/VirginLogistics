@@ -1,27 +1,28 @@
 .footer {
     margin-top: 24%;
-    height: 200px;
+    height: 192px;
     text-align: center;
     font-size: smaller;
+    font-family: 'Inter', sans-serif;
 }
 .header {
-    font-size: large;
-    color: white;
     font-family: 'Inter', sans-serif;
 }
 .kompanijas_nosaukums {
     margin-left: 225px;
+    font-family: 'Inter', sans-serif;
+    font-size: xx-large;
 }
-.pieslēgties{
+.pieslēgties, .pieslēgties_click{
     margin-top: -65px;
     text-align: right;
     margin-right: 30px;
     text-decoration: none;
     font-size: xx-large;
-    color: white;
+    color: black;
     font-family: 'Inter', sans-serif;
 }
-.sludinajumi {
+.sludinajumi, .sakums {
     font-size: xx-large;
     margin: 40px;
     text-decoration:none;
@@ -45,7 +46,8 @@ body, .html {
     
 }
 .logo {
-    height: 130px;
-    width: 160px;
-    margin-top: -200px;
+    height: 120px;
+    width: 150px;
+    margin-top: -80px;
+    margin-left: 20px;
 }
