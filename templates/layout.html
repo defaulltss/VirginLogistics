@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html style="background-color:#9BA0BC;" class="lapa">
-<link rel="stylesheet" href="../visuals/visual.css">
-<link rel="stylesheet" href="../visuals/bodyvisual.css">
+
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='bodyvisual.css')}}">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='visual.css')}}">
+
 <header style="background-color:#9BA0BC;" class="header">
     <br>
         <h1 class="kompanijas_nosaukums" >Virgin Logistics</h1> 
             <div class="numurs">
                 <h1 class="kompanijas_numurs">+371 29440220</h1>
             </div>
-        <img src="/photo/firmas_logo.png" alt="Logo" class="Logo">
+        <img src="/img/logo.png" alt="Logo"> 
+
+
 </header>
 <nav style="background-color:#55505C;" class="navbar">
     <div class="navbarteksts">
-        <a class="sludinajumi" href="/templates/sludinājumi.html">Sludinājumi</a>
+        <a class="sludinajumi" href='/'>HOME(rename)</a>
         <a>*</a>
-        <a class="pieslegites" href="/templates/pieslēgties.html">Pieslēgties</a>
+        <a class="sludinajumi" href='/home'>Sludinājumi</a>
         <a>*</a>
-        <a class="reģistrēties" href="/templates/reģistrēties.html">Reģistrēties</a>
+        <a class="pieslegites" href='/login'>Pieslēgties</a>
+        <a>*</a>
+        <a class="reģistrēties" href="/register">Reģistrēties</a>
     </div>
 </nav>
-<body>
-    <div class="par_mums">
-    </div>
-</body>
+{% block content %}
+
+{% endblock %}
 <footer style="background-color:#55505C;" class="footer">
     <h1>©2022 VirginLogistics</h1>
 </footer>
