@@ -1,9 +1,10 @@
-.footer {
-    margin-top: 24%;
-    height: 192px;
+footer {
+    height : 90px;
     text-align: center;
     font-size: smaller;
     font-family: 'Inter', sans-serif;
+    margin-top: auto;
+    padding: 3em;
 }
 .header {
     font-family: 'Inter', sans-serif;
@@ -32,11 +33,14 @@
 .navbar {
     height: 50px;
 }
-body, .html {
-    height: 100%;
-    width: 100%;
-    margin: 0 !important;
-    padding: 0 !important;
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+html {
+    height: 100%;  
 }
 .navbarteksts {
     text-align: center;
