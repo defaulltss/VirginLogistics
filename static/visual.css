@@ -22,13 +22,12 @@
     color: black;
     font-family: 'Inter', sans-serif;
 }
-.sludinajumi, .sakums {
+.sludinajumi, .sakums, .rēķini, .profils, .parmums {
     font-size: xx-large;
     margin: 40px;
     text-decoration:none;
     color: white;
     font-family: 'Inter', sans-serif;
-
 }
 .navbar {
     height: 50px;
@@ -38,16 +37,43 @@ body, .html {
     width: 100%;
     margin: 0 !important;
     padding: 0 !important;
-
-  }
+}
 .navbarteksts {
     text-align: center;
     color: white;
-    
 }
 .logo {
     height: 120px;
     width: 150px;
     margin-top: -80px;
     margin-left: 20px;
+}
+.par_mums {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: xx-large;
+}
+.homepage {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+.info {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.profilabildes {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.centerphoto {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.photonames {
+    text-align: center;
 }
