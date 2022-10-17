@@ -110,3 +110,12 @@ html{
 .photonames {
     text-align: center;
 }
+.wrapper {
+    display: flex;
+    align-self: center;
+}
+section {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
