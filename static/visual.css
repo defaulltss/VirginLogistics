@@ -1,56 +1,85 @@
-footer {
-    height : 90px;
-    text-align: center;
-    font-size: smaller;
-    font-family: 'Inter', sans-serif;
-    margin-top: auto;
-    padding: 3em;
-}
-.header {
-    font-family: 'Inter', sans-serif;
-}
-.kompanijas_nosaukums {
-    margin-left: 225px;
-    font-family: 'Inter', sans-serif;
-    font-size: xx-large;
-}
-.pieslēgties, .pieslēgties_click{
-    margin-top: -65px;
-    text-align: right;
-    margin-right: 30px;
-    text-decoration: none;
-    font-size: xx-large;
-    color: black;
-    font-family: 'Inter', sans-serif;
-}
-.sludinajumi, .sakums, .rēķini, .profils, .parmums {
-    font-size: xx-large;
-    margin: 40px;
-    text-decoration:none;
-    color: white;
-    font-family: 'Inter', sans-serif;
-}
-.navbar {
-    height: 50px;
-}
-body {
+* {
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+    padding: 0;
+    box-sizing: border-box;
 }
 html {
+    background-color: white;
+    overflow-x: hidden
+}
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+header {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+.nav__links {
+    list-style: none;
+    white-space:nowrap;
+    overflow:hidden;
+}
+.nav__links li {
+    display: inline-block;
+    padding: 0px;
+}
+button {
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    background-color: #011C3C;
+    color: white;
+    margin-left: 25px;
+    font-family: 'Inter', sans-serif;
+}
+.sludinajumi, .sakums, .par, .rēķini, .profils, .parmums {
+    font-size: large ;
+    margin: 20px;
+    padding: 0, 0, 0 , 0;
+    text-decoration:none;
+    color: black;
+    font-family: 'Inter', sans-serif;
+
+}
+.navbar {
+    height: 40px;
+    text-align: center;
+    width: 1000px;
+    background-color: white;
+    border-bottom: 1px solid #333333;
+}
+body {
+    position: relative;
+    padding-bottom: 58px;
+    min-height: 100vh;
+  }
+main {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+html{
     height: 100%;  
 }
 .navbarteksts {
     text-align: center;
     color: white;
+    
 }
 .logo {
     height: 120px;
     width: 150px;
-    margin-top: -80px;
-    margin-left: 20px;
+    margin-right: 50px;
 }
 .par_mums {
     text-align: center;
