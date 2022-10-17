@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 html {
-    background-color: white;
+    background-color: #E5E5E5;
     overflow-x: hidden
 }
 footer {
@@ -19,7 +19,7 @@ footer {
 header {
     font-family: 'Inter', sans-serif;
     display: flex;
-    background-color: white;
+    background-color: #E5E5E5;
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
@@ -55,7 +55,7 @@ button {
     height: 40px;
     text-align: center;
     width: 1000px;
-    background-color: white;
+    background-color: #E5E5E5;
     border-bottom: 1px solid #333333;
 }
 body {
@@ -113,9 +113,17 @@ html{
 .wrapper {
     display: flex;
     align-self: center;
+    margin-left: 300px;
+    font-size: x-large;
+    font-family: Poppins;
 }
 section {
     display: flex;
     align-items: center;
     text-align: center;
+}
+.log {
+    width: 500px;
+    height: 550px;
+    margin-left: 200px;
 }
