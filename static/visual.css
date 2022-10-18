@@ -5,7 +5,7 @@
 }
 html {
     background-color: #E5E5E5;
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 footer {
     text-align: center;
@@ -39,8 +39,20 @@ button {
     border-radius: 50px;
     background-color: #011C3C;
     color: white;
+    font-family: 'Inter', sans-serif;
+}
+.login {
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    background-color: #011C3C;
+    color: white;
     margin-left: 25px;
     font-family: 'Inter', sans-serif;
+}
+#btn {
+    margin-top: 20px;
+    width: 150px;
 }
 .sludinajumi, .sakums, .par, .rēķini, .profils, .parmums {
     font-size: large ;
@@ -126,4 +138,38 @@ section {
     width: 500px;
     height: 550px;
     margin-left: 200px;
+}
+.popsludbox {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.popslud {
+    text-align: center;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.cityname {
+    text-align: center;
+}
+#image {  
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto;
+    padding: 5px;
+    border-radius: 25px;
+}
+.lookup {
+    align-items: center;
+    display: flex;
+}
+.container{  
+    text-align: center;
 }
