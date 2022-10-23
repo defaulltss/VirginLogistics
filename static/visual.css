@@ -26,8 +26,8 @@ header {
 }
 .nav__links {
     list-style: none;
-    white-space:nowrap;
-    overflow:hidden;
+    /* white-space:nowrap;
+    overflow:hidden; */
 }
 .nav__links li {
     display: inline-block;
@@ -175,12 +175,10 @@ section {
     text-align: center;
 }
 #button-left {
-    margin-left: 100%;
     width: 2%;
     height: 2%;
 }
 #button-right {
-    margin-right: 100%;
     width: 2%;
     height: 2%;
 }
