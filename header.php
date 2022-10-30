@@ -47,8 +47,13 @@ if($row)
         if(isset($_SESSION["useruid"]))
         {
     ?>
-        Labdien, <a href="profile.php"> <?php echo $row['users_firstname'] ?></a> /
-        <a href="inc/logout.inc.php">Iziet no sistēmas</a>
+        <nav class="profile">
+            <ul class="prof__links">
+                <li>Labdien,</li>
+                <li><a href="profile.php"> <?php echo $row['users_firstname'] ?></a></li>
+            </ul>
+        </nav>
+        <a href="inc/logout.inc.php"><button>Iziet no sistēmas</button></a>
     <?php
         }
         else

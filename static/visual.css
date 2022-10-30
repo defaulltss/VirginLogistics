@@ -24,12 +24,16 @@ header {
     align-items: center;
     padding: 30px 10%;
 }
-.nav__links {
+.nav__links, .prof__links {
     list-style: none;
     /* white-space:nowrap;
     overflow:hidden; */
 }
 .nav__links li {
+    display: inline-block;
+    padding: 0px;
+}
+.prof__links li {
     display: inline-block;
     padding: 0px;
 }
@@ -54,7 +58,7 @@ button {
     margin-top: 20px;
     width: 150px;
 }
-.sludinajumi, .sakums, .par, .rēķini, .profils, .parmums {
+.sludinajumi, .sakums, .par, .rēķini, .profils, .parmums, .admin {
     font-size: large ;
     margin: 20px;
     padding: 0, 0, 0 , 0;
@@ -69,6 +73,12 @@ button {
     width: 50%;
     background-color: #E5E5E5;
     border-bottom: 1px solid #333333;
+}
+.profile {
+    height: 30%;
+    text-align: center;
+    width: 15%;
+    background-color: #E5E5E5;
 }
 body {
     position: relative;
