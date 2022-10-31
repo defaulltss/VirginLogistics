@@ -49,11 +49,20 @@ if($row)
     ?>
         <nav class="profile">
             <ul class="prof__links">
-                <li>Labdien,</li>
-                <li><a href="profile.php"> <?php echo $row['users_firstname'] ?></a></li>
+                <li>
+                    <div class="profile__dropdown">
+                    <img class="profile__img" class="profilabildes" src='static/img/cilveki.jpg'>
+                        <div class="profile__options">
+                            <a href="profile.php">Profils</a>
+                            <a href="#">Mani sludinājumi (Soon)</a>
+                            <a href="#">Ievietot sludinājumu (Soon)</a>
+                            <a href="inc/logout.inc.php">Iziet no sistēmas</a>
+                        </div>
+                    </div>
+                </li>
+                <li><?php echo $row['users_firstname'] ?></li>
             </ul>
         </nav>
-        <a href="inc/logout.inc.php"><button>Iziet no sistēmas</button></a>
     <?php
         }
         else
