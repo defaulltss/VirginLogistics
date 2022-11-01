@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 class Login extends Dbh {
 
     protected function getUser($uid, $pwd) {
-        $stmt = $this->connect()->prepare('SELECT users_pwd FROM users WHERE users_uid = ? or users_email = ?;');
+        $stmt = $this->connect()->prepare('SELECT users_pwd FROM users WHERE users_uid = ? or users_id = ?;');
         
         if(!$stmt->execute(array($uid, $pwd))) {
             $stmt = null;
@@ -33,7 +33,7 @@ class Login extends Dbh {
             exit();
         }
         elseif($checkPwd == true){
-            $stmt = $this->connect()->prepare('SELECT * FROM users WHERE users_uid = ? OR users_email AND users_pwd = ?;');
+            $stmt = $this->connect()->prepare('SELECT * FROM users WHERE users_uid = ? or users_id AND users_pwd = ?;');
 
             if(!$stmt->execute(array($uid, $pwd))) {
                 $stmt = null;

@@ -20,10 +20,10 @@ class Signup extends Dbh {
         
     }
 
-    protected function checkUser($firstname, $uid) {
-        $stmt = $this->connect()->prepare('SELECT users_firstname FROM users WHERE users_firstname = ? OR users_uid = ?;');
+    protected function checkUser($uid) {
+        $stmt = $this->connect()->prepare('SELECT users_uid FROM users WHERE users_uid = ?;');
         
-        if(!$stmt->execute(array($firstname, $uid))) {
+        if(!$stmt->execute(array($uid))) {
             $stmt = null;
             header("location: ../register.php?error=stmtfailed");
             exit();

@@ -85,7 +85,7 @@ class SignupContr extends Signup {
     }
     private function uidTakenCheck() {
         $result;
-        if(!$this->checkUser($this->firstname, $this->email))
+        if(!$this->checkUser($this->uid))
         {
             $result = false;
         }
