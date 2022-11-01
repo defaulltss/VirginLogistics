@@ -6,5 +6,6 @@ CREATE TABLE users (
     users_lastname VARCHAR(50) NOT NULL,
     users_uid VARCHAR(320) NOT NULL,
     users_pwd CHAR(60) NOT NULL,
+    users_email VARCHAR(320),
     type INT(11) NULL Default '0'
 );
