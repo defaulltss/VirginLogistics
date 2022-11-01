@@ -1,56 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #E5E5E5;
+    overflow-x: hidden;
+}
 footer {
-    height : 90px;
     text-align: center;
-    font-size: smaller;
-    font-family: 'Inter', sans-serif;
-    margin-top: auto;
-    padding: 3em;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
-.header {
+header {
     font-family: 'Inter', sans-serif;
+    display: flex;
+    background-color: #E5E5E5;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
 }
-.kompanijas_nosaukums {
-    margin-left: 225px;
-    font-family: 'Inter', sans-serif;
-    font-size: xx-large;
+.nav__links, .prof__links {
+    list-style: none;
+    /* white-space:nowrap;
+    overflow:hidden; */
 }
-.pieslēgties, .pieslēgties_click{
-    margin-top: -65px;
-    text-align: right;
-    margin-right: 30px;
-    text-decoration: none;
-    font-size: xx-large;
-    color: black;
-    font-family: 'Inter', sans-serif;
+.nav__links li {
+    display: inline-block;
+    padding: 0px;
 }
-.sludinajumi, .sakums, .rēķini, .profils, .parmums {
-    font-size: xx-large;
-    margin: 40px;
-    text-decoration:none;
+.prof__links li {
+    padding: 0px;
+    text-align: center;
+}
+button {
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    background-color: #011C3C;
     color: white;
     font-family: 'Inter', sans-serif;
 }
+.login {
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    background-color: #011C3C;
+    color: white;
+    margin-left: 25px;
+    font-family: 'Inter', sans-serif;
+}
+#btn {
+    margin-top: 20px;
+    width: 150px;
+}
+.sludinajumi, .sakums, .par, .rēķini, .profils, .parmums, .admin {
+    font-size: large ;
+    margin: 20px;
+    padding: 0, 0, 0 , 0;
+    text-decoration:none;
+    color: black;
+    font-family: 'Inter', sans-serif;
+
+}
 .navbar {
-    height: 50px;
+    height: 30%;
+    text-align: center;
+    width: 50%;
+    background-color: #E5E5E5;
+    border-bottom: 1px solid #333333;
+}
+.profile {
+    height: 30%;
+    text-align: center;
+    width: 15%;
+    background-color: #E5E5E5;
 }
 body {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+    position: relative;
+    padding-bottom: 5%;
+    min-height: 100vh;
+  }
+main {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 3% 2%;
 }
-html {
+html{
     height: 100%;  
 }
 .navbarteksts {
     text-align: center;
     color: white;
+    
 }
 .logo {
-    height: 120px;
-    width: 150px;
-    margin-top: -80px;
-    margin-left: 20px;
+    height: 8%;
+    width: 12%;
+    margin-right: 3%;
 }
 .par_mums {
     text-align: center;
@@ -64,14 +116,14 @@ html {
 .info {
     text-align: center;
     font-family: 'Inter', sans-serif;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .profilabildes {
-    width: 200px;
-    height: 200px;
-    margin-right: 20px;
-    margin-left: 20px;
+    width: 10%;
+    height: 10%;
+    margin-right: 2%;
+    margin-left: 2%;
 }
 .centerphoto {
     margin-left: auto;
@@ -80,4 +132,159 @@ html {
 }
 .photonames {
     text-align: center;
+}
+.personal__1 {
+    padding-top: 10px;
+    margin: auto;
+    text-align: center;
+}
+figure {
+    border: 1px #cccccc solid;
+    padding: 4px;
+    width: 15%;
+    display: inline-block;
+}
+figcaption {
+    background-color: #011C3C;
+    color: white;
+    padding: 2px;
+    text-align: center;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.wrapper {
+    display: flex;
+    align-self: center;
+    margin-left: 15%;
+    font-size: x-large;
+}
+section {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.log {
+    width: 30%;
+    height: 50%;
+    margin-left: 12%;
+}
+.popsludbox {
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+.popslud {
+    text-align: center;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 1%;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.cityname {
+    text-align: center;
+}
+#image {  
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto;
+    padding: 1%;
+    border-radius: 10%;
+    width: 70%;
+    height: 30%;
+}
+.lookup {
+    align-items: center;
+    display: flex;
+}
+.container{  
+    text-align: center;
+}
+#button-left {
+    width: 2%;
+    height: 2%;
+}
+#button-right {
+    width: 2%;
+    height: 2%;
+}
+.profile__img {
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.profile__dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+} 
+.profile__options {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: -100%;
+    animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.5s;
+} 
+.profile__options a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 10px;
+    display: block;
+    opacity: 1;
+}
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.profile__options a:hover {background-color: #ddd;}
+.profile__dropdown:hover .profile__options {display: block;} 
+.profile__dropdown:hover .profile__img {background-color: #3e8e41;}
+
+#LoginBody {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    min-height: 100vh;
+    height: 90%;
+    min-width: 100vw;
+    width: 100%;
+    display: none;
+    background-color: #0009;
+    justify-content: center;
+    z-index: 999;
+}
+#LoginBody div {
+    margin-top: 20vh;
+    width: 25vw;
+    height: 50vh;
+    background-color: #E5E5E5;
+    opacity: 100%;
+    z-index: 1000;
+    padding: 1rem;
+}
+.info {
+  border-width:1px;
+  border-style:solid;
+  height:20px;
+  border-radius:12px;
+  border-color:rgb(211, 211, 211);
+  background-color: rgb(247, 247, 247);
 }
