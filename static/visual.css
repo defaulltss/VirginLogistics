@@ -263,6 +263,9 @@ section {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.block {
+    border-radius: 5px;
+}
 .notyet {
     text-align: center;
     white-space: nowrap;
@@ -331,6 +334,7 @@ section {
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    border-radius: 50px;
 }
 .register__page {
     text-align:center;
