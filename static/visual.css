@@ -257,7 +257,42 @@ section {
 .profile__options a:hover {background-color: #ddd;}
 .profile__dropdown:hover .profile__options {display: block;} 
 .profile__dropdown:hover .profile__img {background-color: #3e8e41;}
-
+.pieslegties {
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.notyet {
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.submit, .info {
+    background-color: #011C3C;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.reg, .reg__google {
+    background-color: #011C3C;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 #LoginBody {
     position: absolute;
     top: 150px;
@@ -274,17 +309,29 @@ section {
 #LoginBody div {
     margin-top: 20vh;
     width: 25vw;
-    height: 50vh;
+    height: 350px;
     background-color: #E5E5E5;
     opacity: 100%;
     z-index: 1000;
     padding: 1rem;
 }
 .info {
-  border-width:1px;
-  border-style:solid;
-  height:20px;
-  border-radius:12px;
-  border-color:rgb(211, 211, 211);
-  background-color: rgb(247, 247, 247);
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.info_2 {
+    text-align:center;
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.register__page {
+    text-align:center;
 }

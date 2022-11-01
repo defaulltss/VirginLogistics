@@ -68,7 +68,7 @@ if($row)
         else
         {
     ?>
-        <li><a onclick="Loginfunction()"><button class="login">Pieslēgties</button></a></li>
+        <a onclick="Loginfunction()"><button class="login">Pieslēgties</button></a>
     <?php
         }
     ?>
@@ -85,22 +85,19 @@ function Loginfunction() {
 }
 </script>
 <div id="LoginBody" class="fade">
-  <div style="">
-    <h2 style="text-align: center;">Pieslēgties</h2>
-    <br>
-    <br>
+  <div class="block">
+    <h2 class="pieslegties">Pieslēgties</h2>
     <form action="inc/login.inc.php" method="post" required>
-        <input style="position:relative; left:-15px;  "class="info" type="text" name="uid" placeholder="E-pasts" required>
-        <input style="position:relative; left:195px;top:-20px;  "class="info" type="password" name="pwd" placeholder="Parole" required>
-        <br>
-        <br>
-        <button style=" position:relative; left:300px;" type="sumbit" name="submit">Pieslēgties</button>
+        <input class="info" type="text" name="uid" placeholder="E-pasts" required>
+        <input class="info" type="password" name="pwd" placeholder="Parole" required>
+        <button type="sumbit" name="submit" class="submit">Pieslēgties</button>
     </form>
-    <h3 style="text-align: center; margin-top:10px;">nav vel konts uztaisīts? tad</h3>
+    <h3 class="notyet">Neesat registrejies?</h3>
+    <br>
     <hr>
-        <br>
-        <a href="register.php"><button style="position:relative; left:25px;">Reģistrēties</button></a>
-        <a href="#"><button style="position:relative; right:-128px;">google(nestrada vel)</button></a>
+    <br>
+    <a href="register.php"><button class="reg">Reģistrēties</button></a>
+    <!-- <a href="#"><button class="reg__google">google(nestrada vel)</button></a> -->
   </div>
 </div>
 
