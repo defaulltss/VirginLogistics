@@ -8,6 +8,15 @@ html {
     background-color: #E5E5E5;
     overflow-x: hidden;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color: #E5E5E5;
+    overflow-x: hidden;
+}
 footer {
     text-align: center;
     background-color: #333;
@@ -24,7 +33,17 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
+    display: flex;
+    background-color: #E5E5E5;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
 }
+/* [ O ] Error massages, NiksV */
+.error{
+    color:red;
+}
+/* [ C ] Error massages, NiksV */
 .nav__links, .prof__links {
     list-style: none;
     /* white-space:nowrap;
@@ -67,6 +86,7 @@ button {
     color: black;
     font-family: 'Inter', sans-serif;
 
+
 }
 .navbar {
     height: 30%;
@@ -97,6 +117,7 @@ html{
 .navbarteksts {
     text-align: center;
     color: white;
+    
     
 }
 .logo {
