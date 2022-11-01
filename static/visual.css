@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 html {
     background-color: #E5E5E5;
     overflow-x: hidden;
@@ -25,6 +24,11 @@ header {
     align-items: center;
     padding: 30px 10%;
 }
+/* [ O ] Error massages, NiksV */
+.error{
+    color:red;
+}
+/* [ C ] Error massages, NiksV */
 .nav__links, .prof__links {
     list-style: none;
     /* white-space:nowrap;
