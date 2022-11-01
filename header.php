@@ -68,12 +68,38 @@ if($row)
         else
         {
     ?>
-        <li><a href="login.php"><button class="login">Pieslēgties</button></a></li>
+        <a onclick="Loginfunction()"><button class="login">Pieslēgties</button></a>
     <?php
         }
     ?>
 </header>
+<script>
+function Loginfunction() {
+  var x = document.getElementById("LoginBody");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
 
+}
+</script>
+<div id="LoginBody" class="fade">
+  <div class="block">
+    <h2 class="pieslegties">Pieslēgties</h2>
+    <form action="inc/login.inc.php" method="post" required>
+        <input class="info" type="text" name="uid" placeholder="E-pasts" required>
+        <input class="info" type="password" name="pwd" placeholder="Parole" required>
+        <button type="sumbit" name="submit" class="submit">Pieslēgties</button>
+    </form>
+    <h3 class="notyet">Neesat registrejies?</h3>
+    <br>
+    <hr>
+    <br>
+    <a href="register.php"><button class="reg">Reģistrēties</button></a>
+    <!-- <a href="#"><button class="reg__google">google(nestrada vel)</button></a> -->
+  </div>
+</div>
 
 <?php if(access('ADMIN', false)): ?>
     

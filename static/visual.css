@@ -3,6 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    background-color: #E5E5E5;
+    overflow-x: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html {
     background-color: #E5E5E5;
     overflow-x: hidden;
@@ -18,6 +28,11 @@ footer {
 }
 header {
     font-family: 'Inter', sans-serif;
+    display: flex;
+    background-color: #E5E5E5;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
     display: flex;
     background-color: #E5E5E5;
     justify-content: space-between;
@@ -71,6 +86,7 @@ button {
     color: black;
     font-family: 'Inter', sans-serif;
 
+
 }
 .navbar {
     height: 30%;
@@ -101,6 +117,7 @@ html{
 .navbarteksts {
     text-align: center;
     color: white;
+    
     
 }
 .logo {
@@ -261,3 +278,85 @@ section {
 .profile__options a:hover {background-color: #ddd;}
 .profile__dropdown:hover .profile__options {display: block;} 
 .profile__dropdown:hover .profile__img {background-color: #3e8e41;}
+.pieslegties {
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.block {
+    border-radius: 5px;
+}
+.notyet {
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.submit, .info {
+    background-color: #011C3C;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.reg, .reg__google {
+    background-color: #011C3C;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#LoginBody {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    min-height: 100vh;
+    height: 90%;
+    min-width: 100vw;
+    width: 100%;
+    display: none;
+    background-color: #0009;
+    justify-content: center;
+    z-index: 999;
+}
+#LoginBody div {
+    margin-top: 20vh;
+    width: 25vw;
+    height: 350px;
+    background-color: #E5E5E5;
+    opacity: 100%;
+    z-index: 1000;
+    padding: 1rem;
+}
+.info {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.info_2 {
+    text-align:center;
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+.register__page {
+    text-align:center;
+}

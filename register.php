@@ -4,31 +4,37 @@ include "template\access.php";
 include "header.php";
 ?>
 
-<div class="container">
-    <h2>Reģistrēties portālā!</h2>
-    <?php
-        $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-
-        if (strpos($fullUrl, "error=email") == true) {
-            echo "<p class='error'>E-pasts nav pareizajā formātā!<p>";
-        }
-        elseif (strpos($fullUrl, "error=passwordmatch") == true) {
-            echo "<p class='error'>Jūsu paroles nesakrīt!<p>";
-        }
-        elseif (strpos($fullUrl, "error=useroremailtaken") == true) {
-            echo "<p class='error'>Lietotājs ar tādu e-pastu jau eksistē!<p>";
-        }
-    ?>
-    <form action="inc\signup.inc.php" method="POST">
-        <input type="text" name="firstname" placeholder="Vārds" required><br>
-        <input type="text" name="lastname" placeholder="Uzvārds" required><br>
-        <input type="text" name="uid" placeholder="E-pasts" required><br>
-        <input type="password" name="pwd" placeholder="Jūsu parole" required><br>
-        <input type="password" name="pwdrepeat" placeholder="Atkārtojiet paroli" required>
+<div class="index-login-signup">
+    <h2 class="pieslegties">Reģistrēties</h2>
+    <br>
+    <hr>
+    <br>
+    <h3 class="pieslegties">Ievadiet visus vajadzigos datus</h3>
+    <br>
+    <br>
+    <form class="register__page" action="inc\signup.inc.php" method="POST">
+        <h4>Vārds</h4>
+        <input type="text" class="info_2" name="firstname" placeholder="Vārds" required>
+        <h4>Uzvārds</h4>
+        <input type="text" class="info_2" name="lastname" placeholder="Uzvārds" required>
+        <br>
+        <br>
+        <h4>E-pasts</h4>
+        <input type="text" class="info_2" name="uid" placeholder="E-pasts" required>
+        <br>
+        <br>
+        <h4>Parole</h4>
+        <input type="password" class="info_2" name="pwd" placeholder="Jūsu parole" required>
+        <input type="password" class="info_2" name="pwdrepeat" placeholder="Atkārtojiet paroli" required>
+        <br>
         <br>
         <button type="submit" name="submit">Reģistrēties</button>
     </form>
 </div>
+<br>
+<br>
+<br>
+<br>
 
 
 <?php include 'footer.php'?>
