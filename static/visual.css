@@ -154,27 +154,6 @@ html{
 .photonames {
     text-align: center;
 }
-.personal__1 {
-    padding-top: 10px;
-    margin: auto;
-    text-align: center;
-}
-figure {
-    border: 1px #cccccc solid;
-    padding: 4px;
-    width: 15%;
-    display: inline-block;
-}
-figcaption {
-    background-color: #011C3C;
-    color: white;
-    padding: 2px;
-    text-align: center;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
 .wrapper {
     display: flex;
     align-self: center;
@@ -359,4 +338,26 @@ section {
 }
 .register__page {
     text-align:center;
+}
+.gallery {
+    width: 85vw;
+    height: 60vmin;
+    display: flex;
+    gap: 5px;
+    margin: auto;
+}
+.gallery img {
+    height: 100%;
+    flex: 1;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 1s;
+}
+.gallery img:hover {
+    flex: 4;
+}
+.quote {
+    text-align: center;
+    margin-bottom: 2%;
 }
