@@ -3,38 +3,48 @@ session_start();
 include "template\access.php";
 include "header.php";
 ?>
-
-<div class="index-login-signup">
+<div class="container">
     <h2 class="pieslegties">Reģistrēties</h2>
     <br>
     <hr>
     <br>
-    <h3 class="pieslegties">Ievadiet visus vajadzigos datus</h3>
+    <p>Ievadiet visus vajadzigos datus</p>
+    <?php
+        $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+
+        if (strpos($fullUrl, "error=usernotfound") == true) {
+            echo "<p class='error'>Lietotājs netika atrasts!<p>";
+        }
+        elseif (strpos($fullUrl, "error=email") == true) {
+            echo "<p class='error'>Nepareizs e-pasta formāts!<p>";
+        }
+        elseif (strpos($fullUrl, "error=passwordmatch") == true) {
+            echo "<p class='error'>Paroles nesakrīt!<p>";
+        }
+        elseif (strpos($fullUrl, "error=useroremailtaken") == true) {
+            echo "<p class='error'>Konts ar šādu e-pastu pastāv!<p>";
+        }
+    ?>
     <br>
     <br>
     <form class="register__page" action="inc\signup.inc.php" method="POST">
-        <h4>Vārds</h4>
-        <input type="text" class="info_2" name="firstname" placeholder="Vārds" required>
-        <h4>Uzvārds</h4>
-        <input type="text" class="info_2" name="lastname" placeholder="Uzvārds" required>
-        <br>
-        <br>
-        <h4>E-pasts</h4>
-        <input type="text" class="info_2" name="uid" placeholder="E-pasts" required>
-        <br>
-        <br>
-        <h4>Parole</h4>
-        <input type="password" class="info_2" name="pwd" placeholder="Jūsu parole" required>
-        <input type="password" class="info_2" name="pwdrepeat" placeholder="Atkārtojiet paroli" required>
-        <br>
-        <br>
+        <p>Vārds</p>
+        <input type="text" class="info" name="firstname" required>
+        <p>Uzvārds</p>
+        <input type="text" class="info" name="lastname" required>
+
+        <p>E-pasts</p>
+        <input type="text" class="info" name="uid" required>
+        <br><br>
+        <p>Parole</p>
+        <input type="password" class="info" name="pwd" required>
+        <p>Parole atkārtoti</p>
+        <input type="password" class="info" name="pwdrepeat" required>
+        <br><br>
         <button type="submit" name="submit">Reģistrēties</button>
     </form>
 </div>
-<br>
-<br>
-<br>
-<br>
+
 
 
 <?php include 'footer.php'?>

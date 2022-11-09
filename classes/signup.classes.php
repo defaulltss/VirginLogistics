@@ -11,7 +11,7 @@ class Signup extends Dbh {
         $hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
         
         if(!$stmt->execute(array($firstname, $lastname, $hashedPwd, $uid))) {
-            $stmt = null;
+            $stmt = null;            
             header("location: ../register.php?error=stmtfailed");
             exit();
         }

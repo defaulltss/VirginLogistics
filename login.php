@@ -4,10 +4,10 @@ include "template\access.php";
 include "header.php";
 
 ?>
- 
+
 <div class="container">
-            <h2>Pieslēgties portālā!</h2>
-            <?php
+    <h2>Pieslēgties portālā!</h2>
+    <?php
                     $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
                     if (strpos($fullUrl, "error=usernotfound") == true) {
@@ -16,19 +16,22 @@ include "header.php";
                     elseif (strpos($fullUrl, "error=wrongpassword") == true) {
                         echo "<p class='error'>Nepareiza parole!<p>";
                     }
-            ?>
-            <form action="inc/login.inc.php" method="post" required>
-                <input type="text" name="uid" placeholder="E-pasts" required>
-                <br>
-                <input type="password" name="pwd" placeholder="Parole" required>
-                <br>
-                <button type="sumbit" name="submit">Pieslēgties</button>
-            </form>
-                <br>
-                <a href="register.php"><button>Reģistrēties</button></a>
+    ?>
+    <form action="inc/login.inc.php" method="post" required>
+            
+    <div class="container">
+    <form action="inc/login.inc.php" method="post" required>
+        <input class="info" type="text" name="uid" placeholder="E-pasts" required>
+        <input class="info" type="password" name="pwd" placeholder="Parole" required>
+        <br>
+        <button style="width:25%;"  class="submit">Pieslēgties</button>
+    </form>
+    <br>
+        <p>Nav konts?  <a href="register.php">Reģistrējies</a></p>
+    </div>
 </div>
 
 
-</section>
-
-<?php include 'footer.php'?>
+<?php
+include "footer.php";
+?>
