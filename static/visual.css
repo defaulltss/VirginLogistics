@@ -156,27 +156,6 @@ html{
 .photonames {
     text-align: center;
 }
-.personal__1 {
-    padding-top: 10px;
-    margin: auto;
-    text-align: center;
-}
-figure {
-    border: 1px #cccccc solid;
-    padding: 4px;
-    width: 15%;
-    display: inline-block;
-}
-figcaption {
-    background-color: #011C3C;
-    color: white;
-    padding: 2px;
-    text-align: center;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
 .wrapper {
     display: flex;
     align-self: center;
@@ -387,3 +366,59 @@ section {
     width:80%;
     
   }
+.gallery {
+    width: 85vw;
+    height: 60vmin;
+    display: flex;
+    gap: 5px;
+    margin: auto;
+}
+.gallery img {
+    height: 100%;
+    flex: 1;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 1s;
+}
+.gallery img:hover {
+    flex: 4;
+}
+.quote {
+    text-align: center;
+    margin-bottom: 2%;
+}
+.Filters{
+    width: 15%;
+    height: 50%;
+    margin-left: 4%;
+    margin-right: 3%;
+    z-index: 1;
+    position: fixed;
+    background-color: lightgray;
+    margin-top: 3%;
+    border-radius: 10px;
+    text-indent: 3%;
+    text-align: center;
+}
+.Listings{
+    width: 60%;
+    height: 70%;
+    margin-left: 26%;
+}
+.cena, .platiba {
+    width: 17%;
+    text-align: center;
+    display: inline-block;
+    border-radius: 25px;
+    padding: 1%;
+}
+.meklet {
+    text-align: center;
+    align-content: center;
+    width: 60%;
+    border-radius: 25px;
+    padding: 1%;
+    position: center;
+}
+
