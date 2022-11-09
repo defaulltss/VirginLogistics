@@ -55,7 +55,7 @@ if($row)
                         <div class="profile__options">
                             <a href="profile.php">Profils</a>
                             <a href="#">Mani sludinājumi (Soon)</a>
-                            <a href="#">Ievietot sludinājumu (Soon)</a>
+                            <a href="actions.php">Ievietot sludinājumu (Soon)</a>
                             <a href="inc/logout.inc.php">Iziet no sistēmas</a>
                         </div>
                     </div>
