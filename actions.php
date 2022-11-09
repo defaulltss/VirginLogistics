@@ -2,6 +2,7 @@
 # Pievienot, rediģēt un dzēst sludinājumus
 include "template/access.php";
 include "header.php";
+// include "./template/functions.php"; // db savienojums -NEDER-
 ?>
 
 <script>
@@ -16,17 +17,35 @@ document.ievade.reset();
 
 <div id="ievadee" style="display:none">
   <!-- Pievieno jaunu sludinājumu 
-  FORMAI VAJAG action="" UN method=""
+  * brīva vieta jūsu reklāmai *
+  name=.. aiziet uz sludinajums.inc.php
 -->
-  <form name="ievade">
-    <label for="myfile"> Pievienot bildi: </label>
+  <form name="ievade" action="inc\sludinajums.inc.php" method="POST">
+    <!-- <label for="myfile"> Pievienot bildi: </label>
     <input type="file" id="myfile" name="myfile" />
+    <br></br> 
+  ---BILDI NEVAJAG---
+  -->
+    <label>Nosaukums: </label>
+    <input type="text" name="nosaukums" placeholder="Trīsistabu dzīvoklis" required>
     <br></br>
-    <label>Apraksts :</label>
+    <label>Cena: </label>
+    <input type="text" name="cena" placeholder="50" required> <label>€/mēn</label>
+    <br></br>
+    <label>Vieta: </label>
+    <input type="text" name="vieta" placeholder="Ielas Iela 9" required>
+    <br></br>
+    <label>Stāvs: </label>
+    <input type="text" name="stavs" placeholder="1" required>
+    <br></br>
+    <label>Istabu skaits: </label>
+    <input type="text" name="istbskaits" placeholder="4" required>
+    <br></br>
+    <label>Platība: </label>
+    <input type="text" name="platiba" placeholder="200" required> <label>m2</label>
+    <br></br>
+    <label>Apraksts: </label>
     <input type="text" name="apraksts" placeholder="Tīrs, mājīgs dzīvoklis" required>
-    <br></br>
-    <label>cena:</label>
-    <input type="text" name="Cena" placeholder="50" required> <label>€/mēn</label>
   </form>
   <br>
   <button name="nosutit" onclick="submit_form();document.getElementById('ievadeee').style.display = '';document.getElementById('ievadee').style.display = 'none'">Nosūtīt</button>
