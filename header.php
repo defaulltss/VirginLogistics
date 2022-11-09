@@ -36,9 +36,9 @@ if($row)
             <li><a class="sakums" href="index.php">Sākums</a></li>
             <li><a class="sludinajumi" href="listings.php">Sludinājumi</a></li>
             <li><a class="parmums" href="about.php">Par mums</a></li>
-        <?php if(access('ADMIN', false)): ?>
+            <?php if(access('ADMIN', false)): ?>
             <li>
-                <a class="admin" href="admin.php">Admin</a>
+                <a class="parmums" href="admin.php">Admin</a>
             </li>
         <?php endif; ?>
         </ul>
@@ -68,38 +68,47 @@ if($row)
         else
         {
     ?>
-        <a onclick="Loginfunction()"><button class="login">Pieslēgties</button></a>
+
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Pieslēgties</button>
     <?php
         }
     ?>
 </header>
-<script>
-function Loginfunction() {
-  var x = document.getElementById("LoginBody");
-  if (x.style.display === "none") {
-    x.style.display = "flex";
-  } else {
-    x.style.display = "none";
-  }
 
-}
-</script>
-<div id="LoginBody" class="fade">
-  <div class="block">
-    <h2 class="pieslegties">Pieslēgties</h2>
+<div id="id01" class="modal">
+
+  <form class="modal-content animate" action="inc/login.inc.php" method="post" required>
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src='static/img/logo.png' class="avatar">
+    </div>
+
+    <div class="container">
     <form action="inc/login.inc.php" method="post" required>
         <input class="info" type="text" name="uid" placeholder="E-pasts" required>
         <input class="info" type="password" name="pwd" placeholder="Parole" required>
-        <button type="sumbit" name="submit" class="submit">Pieslēgties</button>
+        <br>
+        <button style="width:25%;"  class="submit">Pieslēgties</button>
     </form>
-    <h3 class="notyet">Neesat registrejies?</h3>
     <br>
-    <hr>
-    <br>
-    <a href="register.php"><button class="reg">Reģistrēties</button></a>
-    <!-- <a href="#"><button class="reg__google">google(nestrada vel)</button></a> -->
-  </div>
+        <p>Nav konts?  <a href="register.php">Reģistrējies</a></p>
+    </div>
+
+  </form>
+
 </div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 
 <?php if(access('ADMIN', false)): ?>
     

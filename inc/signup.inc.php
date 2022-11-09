@@ -18,6 +18,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
     include '../classes/dbh.classes.php';
     include '../classes/signup.classes.php';
     include '../classes/signup-contr.classes.php';
+
     $signup = new SignupContr($firstname, $lastname, $pwd, $pwdRepeat, $uid);
 
 
@@ -25,7 +26,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
     $signup->signupUser();
 
     // Going to back to front page
-    header("location: ../login.php?error=none");
+    ?><script>
+        alert("Konts izveidots!");
+        window.location.replace('../index.php');
+    </script><?php
+    // header("location: ../index.php");
+
 
 }
 ?>

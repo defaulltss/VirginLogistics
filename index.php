@@ -3,7 +3,7 @@ session_start();
 include "template\access.php";
 include "header.php";
 ?>
-
+<div class="container">
 <section>
 
     <img class="log" src='static/img/unknown.png'>
@@ -58,5 +58,6 @@ include "header.php";
     <input type="image" src='static/img/button-right.png' id="button-left">
 </section>
 <br><br>
+</div>
 
 <?php include 'footer.php'?>

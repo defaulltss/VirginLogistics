@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 
 class Login extends Dbh {
 
-    protected function getUser($uid, $pwd) {
+    PUBLIC function getUser($uid, $pwd) {
         $stmt = $this->connect()->prepare('SELECT users_pwd FROM users WHERE users_uid = ?');
         
         if(!$stmt->execute(array($uid))) {
@@ -60,7 +60,9 @@ class Login extends Dbh {
         }
         $stmt = null;
         
+        
     }
+
 
 }
 
