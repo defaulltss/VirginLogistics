@@ -16,12 +16,11 @@ include "header.php";
         <input type="text" placeholder="Meklēšana" class="meklet">
         <br><br>
     <div>
-    <br>
         <input type="checkbox"> Rīga
         <input type="checkbox"> Liepāja
         <input type="checkbox"> Tukums
         <input type="checkbox"> Jelgava
-            <a href="">Rādīt vairāk</a>
+        <a href="">Rādīt vairāk</a>
     </div>
         <br><br>
         <h2>Platība</h2>
@@ -29,13 +28,39 @@ include "header.php";
     <div class="form_no_lidz">
         <input type="text" id="platiba_no" class="platiba"> līdz <input type="text" id="platiba_lidz" class="platiba">
     </div>
+    <br><br>
+    <div>
+        <button><a>Filtrēt</a></button>
+    </div>
 </div>
-
 <div class="Listings">
     <h2>Sludinājumi</h2>
-        <div class="sludinajums">
-
-        </div>
+    <div class="sludinajums">
+        <a href="" class="click_slud">
+            <div class="slud"> 
+                <img class="slud_bilde" src='static/img/dzivokli/Ventspils.jpg' alt="img">
+                <a class="sludteksts">Pilsēta : Rīga</a><br>
+                <a class="sludteksts">Iela : Jāņa Asara iela 15</a><br>
+                <a class="sludteksts">Cena : 250 eur/mēn</a>
+            </div>
+        </a>
+        <a href="" class="click_slud">
+            <div class="slud">
+                <img class="slud_bilde" src='static/img/dzivokli/Ogre.jpg' alt="img">
+                <a class="sludteksts">Pilsēta : Rīga</a><br>
+                <a class="sludteksts">Iela : Jāņa Asara iela 15</a><br>
+                <a class="sludteksts">Cena : 250 eur/mēn</a>
+            </div>
+        </a>
+        <a href="" class="click_slud">
+            <div class="slud">
+                <img class="slud_bilde" src='static/img/dzivokli/Riga.jpg' alt="img">
+                <a class="sludteksts">Pilsēta : Rīga</a><br>
+                <a class="sludteksts">Iela : Jāņa Asara iela 15</a><br>
+                <a class="sludteksts">Cena : 250 eur/mēn</a>
+            </div>
+        </a>
+    </div>
 </div>
 
 <?php include 'footer.php'?>

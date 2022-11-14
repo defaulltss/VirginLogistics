@@ -6,10 +6,6 @@
 
 html {
     background-color: #E5E5E5;
-
-
-
-
 }
 * {
     margin: 0;
@@ -394,7 +390,7 @@ section {
     margin-left: 4%;
     margin-right: 3%;
     z-index: 1;
-    position: fixed;
+    position: absolute;
     background-color: lightgray;
     margin-top: 3%;
     border-radius: 10px;
@@ -402,7 +398,7 @@ section {
     text-align: center;
 }
 .Listings{
-    width: 60%;
+    width: 73%;
     height: 70%;
     margin-left: 26%;
 }
@@ -421,4 +417,26 @@ section {
     padding: 1%;
     position: center;
 }
-
+.slud {
+    display: inline-block;
+    width: 25%;
+    height: 42%;
+    /* border: 2px solid; */
+    margin: 2%;
+    font-size: 24px;
+    border-radius: 15px;
+    background-color: #d3d3d3;
+}
+.slud_bilde {
+    width: 100%;
+    height: 70%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.click_slud {
+    text-decoration: none;
+}
+.sludteksts {
+    margin-left: 2%;
+    font-size: smaller;
+}

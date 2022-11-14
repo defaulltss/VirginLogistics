@@ -26,7 +26,7 @@ include "header.php";
                 <br>
             <h2 class="cityname">Rīga</h2>
                 <br>    
-            <h3 class="cityname">Plašs 2 istabu dzīvoklis pašā Rīgas sirdī, ar terasi- Ausekļa ielā 23</h3>
+            <h3 class="cityname">Plašs 2 istabu dzīvoklis pašā Rīgas sirdī, ar terasi - Ausekļa ielā 23</h3>
                 <br>
             <div class="container">  
                 <a href="listings.php"><button id ="btn">Apskatīt</button></a>  
