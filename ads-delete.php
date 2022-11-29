@@ -1,7 +1,6 @@
 <?php 
 require("inc/db.php");
 
-if($ipasumi['users_id']==$row['users_id']):
 if (isset($_GET['id'])) {
 
     try {
@@ -26,4 +25,3 @@ if (isset($_GET['id'])) {
     header("Location: ads-mine.php?status=fail_delete");
     exit();
 }
-endif;
