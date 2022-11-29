@@ -10,5 +10,5 @@ CREATE TABLE ipasumi (
     istabskaits INT NOT NULL,
     platiba INT NOT NULL,
     apraksts VARCHAR(320) NOT NULL,
-    type INT(11) NULL Default '0'
+    users_id INT NOT NULL
 );

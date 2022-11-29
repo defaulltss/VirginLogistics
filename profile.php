@@ -18,7 +18,7 @@ include "header.php";
         <div>
             <h2>Lietotāja profils,</h2>
             <table class="table table-striped">
-                <tr><th>Lietotāja dati, id</th><td><?=$row['users_id']?><td></tr>
+                <tr><th>Lietotāja dati, id</th>
                 <tr><th>Vārds</th><td><?=$row['users_firstname']?><td></tr>
                 <tr><th>Uzvārds</th><td><?=$row['users_lastname']?><td></tr>
                 <tr><th>E-pasts</th><td><?=$row['users_uid']?><td></tr>

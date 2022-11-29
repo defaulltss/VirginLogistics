@@ -2,7 +2,7 @@
 # Pievienot, rediģēt un dzēst sludinājumus
 include "template/access.php";
 include "header.php";
-require('template\functions.php');
+
 // include "./template/functions.php"; // db savienojums -NEDER-
 ?>
 

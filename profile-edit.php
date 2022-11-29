@@ -20,7 +20,7 @@ include "header.php";
                 <table class="table table-striped">
                 <tr><th>Lietotāja dati, id</th>
                     <td>
-                        <input value="<?=$row['users_id']?>" type="text" name="id" placeholder="id" readonly>
+                        <input type="hidden" value="<?=$row['users_id']?>" type="text" name="id" placeholder="id" readonly>
                     <td></tr>
                     <tr><th>Vārds</th>
                         <td>
