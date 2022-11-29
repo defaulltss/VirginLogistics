@@ -34,8 +34,8 @@ if($row)
     <nav class="navbar">
         <ul class="nav__links">
             <li><a class="sakums" href="index.php">Sākums</a></li>
-            <li><a class="sludinajumi" href="ads-home.php">Sludinājumu backend</a></li>
-            <li><a class="sludinajumi" href="listings.php">Sludinājumu dizains</a></li>
+            <!-- <li><a class="sludinajumi" href="ads-home.php">Sludinājumu backend</a></li> -->
+            <li><a class="sludinajumi" href="listings.php">Sludinājumi</a></li>
             <li><a class="parmums" href="about.php">Par mums</a></li>
             <?php if(access('ADMIN', false)): ?>
             <li>

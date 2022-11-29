@@ -7,15 +7,12 @@
 html {
     background-color: #E5E5E5;
 }
-html {
-    background-color: #E5E5E5;
-}
 footer {
     text-align: center;
     background-color: #333;
     color: #fff;
     padding: 20px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
@@ -455,4 +452,50 @@ section {
 }
 .sludinajuma_img {
     width: 100%;
+}
+.sludinajums {
+    padding-bottom: 60px;
+}
+.forma {
+    padding-left: 5%;
+    text-align: justify;
+    padding-bottom: 70px;
+}
+.slud_name {
+    width: 20%;
+    height: 4%;
+    min-height: 20px;
+    min-width: 120px;
+    max-height: 31px;
+    max-width: 250px;
+    border-radius: 5px;
+    border: 0 solid;
+    outline: none;
+}
+.slud_cost {
+    width: 5%;
+    height: 4%;
+    min-height: 20px;
+    min-width: 50px;
+    max-height: 31px;
+    max-width: 250px;
+    border-radius: 5px;
+    border: 0 solid;
+    outline: none;
+}
+.slud_desc {
+    width: 50%;
+    height: 25%;
+    min-height: 20px;
+    min-width: 50px;
+    max-height: 200px;
+    max-width: 300px;
+    border-radius: 5px;
+    border: 0 solid;
+    outline: none;
+}
+.slud_photo{
+    width: 50%;
+    min-width: 270px;
+    max-width: 300px;
 }
