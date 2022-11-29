@@ -36,30 +36,31 @@ include "header.php";
         Neizdevās atjaunināt sludinājumu! 
     </p>
 <?php elseif($ipasumi['users_id']==$row['users_id']):?>
-<form action="ads-update.php" method="POST">
+<form class="forma" action="ads-update.php" method="POST">
     <input type="hidden" name="id" value="<?= $ipasumi['id']?>">
-    <label>Nosaukums: </label>
-    <input type="text" name="nosaukums" placeholder="Trīsistabu dzīvoklis" required value="<?= $ipasumi['nosaukums']?>">
+    <label><b>Nosaukums:</b></label>
+    <input class="slud_name" type="text" name="nosaukums" placeholder="Trīsistabu dzīvoklis" required value="<?= $ipasumi['nosaukums']?>">
     <br></br>
-    <label>Cena: </label>
-    <input type="text" name="cena" placeholder="50" required value="<?= $ipasumi['cena']?>"> <label>€/mēn</label>
+    <label><b>Cena:</b></label>
+    <input class="slud_cost" type="text" name="cena" placeholder="50" required value="<?= $ipasumi['cena']?>"> <label>€/mēn</label>
     <br></br>
-    <label>Vieta: </label>
-    <input type="text" name="vieta" placeholder="Ielas Iela 9" required value="<?= $ipasumi['vieta']?>">
+    <label><b>Vieta:</b></label>
+    <input class="slud_name" type="text" name="vieta" placeholder="Ielas Iela 9" required value="<?= $ipasumi['vieta']?>">
     <br></br>
-    <label>Stāvs: </label>
-    <input type="text" name="stavs" placeholder="1" required value="<?= $ipasumi['stavs']?>">
+    <label><b>Stāvs:</b></label>
+    <input class="slud_cost" type="text" name="stavs" placeholder="1" required value="<?= $ipasumi['stavs']?>">
     <br></br>
-    <label>Istabu skaits: </label>
-    <input type="text" name="istabskaits" placeholder="4" required value="<?= $ipasumi['istabskaits']?>">
+    <label><b>Istabu skaits:</b></label>
+    <input class="slud_cost" type="text" name="istabskaits" placeholder="4" required value="<?= $ipasumi['istabskaits']?>">
     <br></br>
-    <label>Platība: </label>
-    <input type="text" name="platiba" placeholder="200" required value="<?= $ipasumi['platiba']?>"> <label>m2</label>
+    <label><b>Platība:</b></label>
+    <input class="slud_cost" type="text" name="platiba" placeholder="200" required value="<?= $ipasumi['platiba']?>"> <label>m2</label>
     <br></br>
-    <label>Apraksts: </label>
-    <input type="text" name="apraksts" placeholder="Tīrs, mājīgs dzīvoklis" required value="<?= $ipasumi['apraksts']?>">
+    <label><b>Apraksts:</b></label>
+    <input class="slud_desc" type="text" name="apraksts" placeholder="Tīrs, mājīgs dzīvoklis" required value="<?= $ipasumi['apraksts']?>">
     <br>
-    <button type="sumbit">pievienot</button>  
+    <br>
+    <button type="sumbit">Labot sludinājumu</button>  
 </form>
 <?php endif; ?>
 

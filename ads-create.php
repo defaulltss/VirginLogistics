@@ -6,7 +6,7 @@ include "header.php";
 
 <h1>Ievietot sludinājumu</h1>
 
-<a href="ads-home.php">Atpakaļ</a>
+<a href="listings.php">Atpakaļ</a>
 <?php if (isset($_GET['status']) && $_GET['status'] == "fail_create") : ?>
 <p style="color:red;">
     Neizdevās izveidot sludinājumu! 
