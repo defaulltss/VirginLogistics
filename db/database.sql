@@ -17,5 +17,6 @@ CREATE TABLE ipasumi (
     istabskaits INT NOT NULL,
     platiba INT NOT NULL,
     apraksts VARCHAR(320) NOT NULL,
-    users_id INT NOT NULL
+    users_id INT NOT NULL,
+    bilde VARCHAR(191) NOT NULL
 );
