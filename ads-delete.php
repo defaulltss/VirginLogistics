@@ -6,7 +6,7 @@ if (isset($_GET['id'])) {
     try {
         // SQL Statement
         $sql = 'DELETE FROM ipasumi WHERE id = :id LIMIT 1';
-        unlink(images/$ipasumi['bilde']);
+        // unlink(images/$ipasumi['bilde']);
         $stmt = $conn->prepare($sql);
         $stmt->bindParam(":id", $_GET['id'], PDO::PARAM_INT);
         $stmt->execute();
