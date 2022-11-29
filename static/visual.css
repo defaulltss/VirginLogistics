@@ -7,11 +7,6 @@
 html {
     background-color: #E5E5E5;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 html {
     background-color: #E5E5E5;
 }
@@ -26,11 +21,6 @@ footer {
 }
 header {
     font-family: 'Inter', sans-serif;
-    display: flex;
-    background-color: #E5E5E5;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
     display: flex;
     background-color: #E5E5E5;
     justify-content: space-between;
@@ -439,4 +429,30 @@ section {
 .sludteksts {
     margin-left: 2%;
     font-size: smaller;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.column_img {
+    float: left;
+    width: 75%;
+    padding: 10px;
+    height: 300px;
+    text-align: center;
+}
+.column_desc{
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.sludinajuma_img {
+    width: 100%;
 }

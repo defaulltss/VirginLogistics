@@ -3,6 +3,19 @@ session_start();
 include "template\access.php";
 include "header.php";
 ?>
+<?php 
+require("inc/db.php");
+try {
+    // SQL statment
+    $sql = "SELECT * FROM ipasumi";
+    $result = $conn->query($sql);
+
+} catch (Exception $e){
+    echo "Error ". $e->getMessage();
+    exit();
+}    
+
+?>
 
 <div class="Filters">
         <h2>Cena</h2>
@@ -36,30 +49,19 @@ include "header.php";
 <div class="Listings">
     <h2>Sludinājumi</h2>
     <div class="sludinajums">
-        <a href="" class="click_slud">
-            <div class="slud"> 
-                <img class="slud_bilde" src='static/img/dzivokli/Ventspils.jpg' alt="img">
-                <a class="sludteksts">Pilsēta : Rīga</a><br>
-                <a class="sludteksts">Iela : Jāņa Asara iela 15</a><br>
-                <a class="sludteksts">Cena : 250 eur/mēn</a>
-            </div>
-        </a>
-        <a href="" class="click_slud">
-            <div class="slud">
-                <img class="slud_bilde" src='static/img/dzivokli/Ogre.jpg' alt="img">
-                <a class="sludteksts">Pilsēta : Rīga</a><br>
-                <a class="sludteksts">Iela : Jāņa Asara iela 15</a><br>
-                <a class="sludteksts">Cena : 250 eur/mēn</a>
-            </div>
-        </a>
-        <a href="" class="click_slud">
-            <div class="slud">
-                <img class="slud_bilde" src='static/img/dzivokli/Riga.jpg' alt="img">
-                <a class="sludteksts">Pilsēta : Rīga</a><br>
-                <a class="sludteksts">Iela : Jāņa Asara iela 15</a><br>
-                <a class="sludteksts">Cena : 250 eur/mēn</a>
-            </div>
-        </a>
+        <?php if ($result->rowCount() > 0) : ?>
+            <?php foreach ($result as $ipasumi) : ?>
+                <a href="ads-show.php?id=<?=$ipasumi['id']?>" class="click_slud">
+                    <div class="slud">
+                        <img class="slud_bilde" src='images\<?= $ipasumi['bilde'] ?>' />
+                        <div class="sludteksts">
+                            <a><?= $ipasumi['vieta'] ?></a><br>
+                            <a><?= number_format($ipasumi['cena'], 0) ?> €/mēn</a><br>
+                        </div>
+                    </div>
+                </a>
+            <?php endforeach ?>
+        <?php endif ?>
     </div>
 </div>
 

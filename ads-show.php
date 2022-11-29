@@ -38,29 +38,25 @@ include "header.php";
 ?>
 
 <h1>Show</h1>
-<a href="ads-home.php"><--- Iet atpakaļ</a>
-<table>
-    <tr>
-        <td>
-        <img src='images\<?= $ipasumi['bilde'] ?>' style='max-width:255px;' />
-        <td>
-        <th>nosaukums</th>
-        <td><?= $ipasumi['nosaukums'] ?></td>
-        <th>vieta</th>
-        <td><?= $ipasumi['vieta'] ?></td>
-        <th>cena</th>
-        <td><?= number_format($ipasumi['cena'], 2) ?></td>
-        <th>stavs</th>
-        <td><?= $ipasumi['stavs'] ?></td>
-        <th>stavs</th>
-        <td><?= $ipasumi['istabskaits'] ?></td>
-        <th>platiba</th>
-        <td><?= $ipasumi['platiba'] ?></td>
-        <th>apraksts</th>
-        <td><?= $ipasumi['apraksts'] ?></td>
-    </tr>
-</table>
-    <br>
-    <!-- Sludinājuma veidotāja kontakti, lietotājiem nav numurs tāpēc parasts teksts (random numurs) -->
+<a href="listings.php"><--- Iet atpakaļ</a>
+<div class="row">
+    <div class="column_img">
+        <img class="sludinajuma_img" src='images\<?= $ipasumi['bilde'] ?>' style='max-width:255px;' />
+    </div>
+    <div class="column_desc">
+        <b><?= $ipasumi['nosaukums'] ?></b>
+        <p><?= number_format($ipasumi['cena'], 0) ?> €/mēn</p>
+        <p>Atrašanās vieta <?= $ipasumi['vieta'] ?></p>
+        <p>Stāvs <?= $ipasumi['stavs'] ?></p>
+        <p>Istabu skaits <?= $ipasumi['istabskaits'] ?></p>
+        <p>Platība <?= $ipasumi['platiba'] ?> m2</p>
+        <div style="width: 200px;">
+            <p><?= $ipasumi['apraksts'] ?></p>
+        </div>
+    </div>
+</div>
+<div>
     <h6>Kontakti</h6>
     <?= '<strong>',$ipasumi['users_firstname'],' ',$ipasumi['users_lastname'],'</strong><br>',$ipasumi['users_uid'],'<p>27722195<p>'?>
+</div>
+    <!-- Sludinājuma veidotāja kontakti, lietotājiem nav numurs tāpēc parasts teksts (random numurs) -->
