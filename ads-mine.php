@@ -16,14 +16,15 @@ try {
 }    
 
 ?>
+<div style="text-align: center;">
 <h1>Mani sludinājumi</h1>
-<a href="ads-create.php">pievienot</a>
 
+<br>
 <table>
     <tr>
         <th class="slud_element">Nosaukums</th>
         <th class="slud_element">Vieta</th>
-        <th class="slud_element">Cena (€/mēn)</th>
+        <th class="slud_element">Cena ( €/mēn )</th>
         <th class="slud_element">Opcijas</th>
     </tr>
     <?php if ($result->rowCount() > 0) : ?>
@@ -32,7 +33,7 @@ try {
         <tr>
             <td class="slud_info"><?= $ipasumi['nosaukums'] ?></td>
             <td class="slud_info"><?= $ipasumi['vieta'] ?></td>
-            <td class="slud_info"><?= number_format($ipasumi['cena'], 0) ?> €/mēn</td>
+            <td class="slud_info"><?= number_format($ipasumi['cena'], 0) ?></td>
         <td class="slud_info">      
             <a href="ads-show.php?id=<?=$ipasumi['id']?>">Parādīt</a>
             <a href="ads-edit.php?id=<?=$ipasumi['id']?>">Mainīt</a>
@@ -45,3 +46,4 @@ try {
     <?php endif ?>
         </tr>
 </table>
+</div>

@@ -3,10 +3,9 @@ session_start();
 include "template\access.php";
 include "header.php";
 ?>
+<div class="cons">
+<h1>Izveidot sludinājumu</h1>
 
-<h1>Ievietot sludinājumu</h1>
-
-<a href="listings.php">Atpakaļ</a>
 <?php if (isset($_GET['status']) && $_GET['status'] == "fail_create") : ?>
 <p style="color:red;">
     Neizdevās izveidot sludinājumu! 
@@ -41,4 +40,5 @@ include "header.php";
     <br>
     <button type="sumbit">Pievienot sludinājumu</button>  
 </form>
+</div>
 <?php include 'footer.php'?>

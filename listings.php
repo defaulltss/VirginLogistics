@@ -18,7 +18,7 @@ try {
 ?>
 
 <div class="Filters">
-        <h2>Cena</h2>
+        <!-- <h2>Cena</h2>
         <br> 
     <div class="form_no_lidz">
         <input type="text" id="cena_no" class="cena"> līdz <input type="text" id="cena_lidz" class="cena">
@@ -44,7 +44,7 @@ try {
     <br><br>
     <div>
         <button><a>Filtrēt</a></button>
-    </div>
+    </div> -->
 </div>
 <div class="Listings">
     <h2>Sludinājumi</h2>

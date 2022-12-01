@@ -512,3 +512,15 @@ section {
 .slud_info {
     text-align: center;
 }
+.cons {
+
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}

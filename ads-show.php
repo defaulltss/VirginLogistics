@@ -36,27 +36,27 @@ include "template\access.php";
 include "header.php";
 
 ?>
+<a href="listings.php">Atpakaļ</a>
+<div class="cons">
 
-<h1>Show</h1>
-<a href="listings.php">Atpakaļ uz sludinājumu lapu</a>
-<div class="row">
     <div class="column_img">
         <img class="sludinajuma_img" src='images\<?= $ipasumi['bilde'] ?>' style='max-width:255px;' />
     </div>
     <div class="column_desc">
-        <b><?= $ipasumi['nosaukums'] ?></b>
-        <p><?= number_format($ipasumi['cena'], 0) ?> €/mēn</p>
-        <p>Atrašanās vieta <?= $ipasumi['vieta'] ?></p>
-        <p>Stāvs <?= $ipasumi['stavs'] ?></p>
-        <p>Istabu skaits <?= $ipasumi['istabskaits'] ?></p>
-        <p>Platība <?= $ipasumi['platiba'] ?> m2</p>
+        <p><?= number_format($ipasumi['cena'], 0) ?></p><strong>€/mēn</strong><br><br>
+        <strong>Atrašanās vieta</strong><p> <?= $ipasumi['vieta'] ?></p>
+        <strong>Stāvs </strong><p> <?= $ipasumi['stavs'] ?></p>
+        <strong>Istabu skaits </strong><p> <?= $ipasumi['istabskaits'] ?></p>
+        <strong>Platība </strong><p> <?= $ipasumi['platiba'] ?> m2</p>
         <div style="width: 200px; margin-top: 10px;">
             <p><?= $ipasumi['apraksts'] ?></p>
+        <br>
         </div>
     </div>
-</div>
+
 <div>
     <h6>Kontakti</h6>
     <?= '<strong>',$ipasumi['users_firstname'],' ',$ipasumi['users_lastname'],'</strong><br>',$ipasumi['users_uid'],'<p>27722195<p>'?>
 </div>
+
     <!-- Sludinājuma veidotāja kontakti, lietotājiem nav numurs tāpēc parasts teksts (random numurs) -->

@@ -8,55 +8,54 @@ access('USER');
 include "header.php";
 
 ?>
+<div class="cons" style="text-align:center;">
 <h1>Profila rediģēšana</h1>
 <?php if(!empty($row)): ?>
-    <div>
-        <div>
         
-        </div>
         <div>
-            <h2>Lietotāja profils</h2>
-            <form method="post" action="#" >                
-                <table class="table table-striped">
-                <tr><th>Lietotāja dati, id</th>
-                    <td>
-                        <input type="hidden" value="<?=$row['users_id']?>" type="text" name="id" placeholder="id" readonly>
-                    <td></tr>
-                    <tr><th>Vārds</th>
+                       
+            <table class="center" style="width:50%;">
+                <form method="post" action="#">
                         <td>
-                            <input class="slud_namechange" value="<?=" ", $row['users_firstname']?>" type="text" name="firstname" placeholder="Vārds">
+                            <input type="hidden" value="<?=$row['users_id']?>" type="text" name="id" placeholder="id" readonly>
                         <td></tr>
-                    <tr><th>Uzvārds</th>
+                        <tr><th>Vārds</th>
+                            <td>
+                                <input class="slud_namechange" value="<?=" ", $row['users_firstname']?>" type="text" name="firstname" placeholder="Vārds">
+                            <td></tr>
+                        <tr><th>Uzvārds</th>
+                            <td>
+                                <input class="slud_namechange" value="<?=" ", $row['users_lastname']?>" type="text" name="lastname" placeholder="Uzvārds">    
+                            <td></tr>
+                        <tr><th>E-pasts</th>
+                            <td>
+                                <input class="slud_namechange" value="<?=" ", $row['users_uid']?>" type="text" name="uid" placeholder="E-pasts">    
+                            <td></tr>
+
+                        <!-- <tr><th>Parole</th>
                         <td>
-                            <input class="slud_namechange" value="<?=" ", $row['users_lastname']?>" type="text" name="lastname" placeholder="Uzvārds">    
+                            <input class="slud_namechange" type="text" name="pwd" placeholder=" Parole">    
                         <td></tr>
-                    <tr><th>E-pasts</th>
+
+                        <tr><th>Atkārtot paroli</th>
                         <td>
-                            <input class="slud_namechange" value="<?=" ", $row['users_uid']?>" type="text" name="uid" placeholder="E-pasts">    
+                            <input class="slud_namechange" type="text" name="pwdrepeat" placeholder=" Atkārtot paroli">    
+                        <td></tr> -->
+                        <br>
+                        <tr><th></th>
+                        <td>
+                        <div style="text-align:right;">
+                            <button type="sumbit" name="submit">Saglabāt</button>
+                            <a href="profile.php">
+                                <button type="button" class="btn btn-danger">Atcelt</button>
+                            </a>
+                        </div>
                         <td></tr>
-
-                    <tr><th>Parole</th>
-                    <td>
-                        <input class="slud_namechange" type="text" name="pwd" placeholder=" Parole">    
-                    <td></tr>
-
-                    <tr><th>Atkārtot paroli</th>
-                    <td>
-                        <input class="slud_namechange" type="text" name="pwdrepeat" placeholder=" Atkārtot paroli">    
-                    <td></tr>
-
-                </table>
-
-                <div>
-                    <button type="sumbit" name="submit">Saglabāt</button>
-                    <a href="profile.php">
-                        <button type="button" class="btn btn-danger">Atcelt</button>
-                    </a>
-                </div>
-            </form>
-
+                </form>
+            </table>
+            
         </div>
-    </div>
+</div>
 <?php else: ?>
     <p>Profils netika atrasts!</p>
 <?php endif; ?>

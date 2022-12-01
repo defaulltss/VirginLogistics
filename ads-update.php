@@ -27,10 +27,10 @@ if($_POST) {
         $stmt->bindParam("id", $id);
         $stmt->execute();
         if ($stmt->rowCount()) {
-            header("Location: ads-edit.php?id=".$id."&status=updated");
+            header("Location: ads-mine.php?id=".$id."&status=updated");
             exit();
         }
-        header("Location: ads-edit.php?id=".$id."&status=fail_update");
+        header("Location: ads-mine.php?id=".$id."&status=fail_update");
         exit();
     
     } catch(Exception $e) {
@@ -40,7 +40,7 @@ if($_POST) {
 
 
 } else {
-    header("Location: ads-edit.php?id=".$id."&status=fail_update");
+    header("Location: ads-mine.php?id=".$id."&status=fail_update");
     exit();
 }
 

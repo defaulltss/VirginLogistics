@@ -26,7 +26,7 @@ include "header.php";
 ?>
 
 <h1>Edit</h1>
-<a href="ads-home.php"><--- Iet atpakaļ</a>
+<a href="ads-mine.php"><--- Iet atpakaļ</a>
     <?php if (isset($_GET['status']) && $_GET['status'] == "updated") : ?>
     <p style="color:red;">
         Sludinājuma informācija atjaunināta! 
